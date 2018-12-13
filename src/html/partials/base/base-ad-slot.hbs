@@ -1,0 +1,18 @@
+{{#if @root.meta.ads}}
+    {{#if ad}}
+        <div id='{{ad}}' class='ad-slot'>
+            {{#if overline}}
+                <p class='ad-slot__overline'>
+                    <span>Advertisement</span>
+                    <a href='#continue-after-ad'>Continue reading below</a>
+                </p>
+            {{/if}}
+            <script type='text/javascript'>
+                googletag.cmd.push(function () {
+                    googletag.display('{{ad}}');
+                });
+            </script>
+        </div>
+        <div id='continue-after-ad'></div>
+    {{/if}}
+{{/if}}

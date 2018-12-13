@@ -1,0 +1,174 @@
+//=======================
+// Custom styles
+//=======================
+
+// To use images in assets folder:
+// ex: background-image url($assets-path + 'filename.jpg')
+
+// See `base` folder for variables (color, font, media queries)
+/* See the documentation for how to load in regular weight versions */
+.graphichead
+    font-family 'Benton'
+    font-weight 600
+    font-size 50px
+    margin 0 auto
+
+p.subtitle
+    font-family 'Miller'
+    font-weight 600
+    margin 0 auto
+
+.button-wrapper
+    text-align center
+    padding 0
+    margin 0 auto
+    position absolute
+    left 40%
+    right 0
+
+.btn--primary
+    font-size 18px
+    font-weight bold
+    margin 0 auto
+    width 50px
+    height 28px
+    border-radius 5px
+    color #d7ecff
+    background-color #2f363d
+    border 1px solid #c1c1b9
+
+.map_container
+    display flex
+    // height 100vh
+
+.toolTip
+    width 35%
+    height 100vh
+    background #2f363d
+    color #F0F8FF
+    padding 10px
+    border 8px solid #d7ecff
+    font-family 'Roboto Slab', serif
+
+// .g-header
+//     background #000
+//     font-weight bold
+h1.intro
+    font-size 28px
+    padding 10px
+    font-weight bold
+
+
+.toolTip_container
+    padding 20px
+    font-weight 500px
+
+h3
+    margin-bottom 15px
+
+#instructions
+    color #ffff33
+    font-weight 400
+    font-size 28px
+
+#country
+    color #ffff33
+    font-size 25px
+    font-weight 600
+
+#quote
+    font-size 20px
+    line-height 1.7
+
+#year
+    color #ff9933
+    font-size 20px
+    text-align right
+    font-weight 600
+
+.world_map
+    width 65%
+    height 100vh
+    float right
+// svg
+//     height 10%
+
+.legend
+    display flex
+    font-family 'Roboto Slab', serif
+    font-size 1.0em
+    justify-content center
+    flex-flow wrap
+
+.legend_piece
+    display flex
+    padding 5px
+    margin 8px
+
+.squareBox1
+    height 20px
+    width 20px
+    display inline-block
+    background #2c7bb6
+    padding 10px
+
+.squareBox2
+    height 20px
+    width 20px
+    display inline-block
+    background #d7191c
+    padding 10px
+
+.squareBox3
+    height 20px
+    width 20px
+    display inline-block
+    background #F2F27A
+    padding 10px
+
+.squareBox4
+    height 20px
+    width 20px
+    display inline-block
+    background #fdae61
+    padding 10px
+
+.squareBox5
+    height 20px
+    width 20px
+    display inline-block
+    background #e9e9e9
+    padding 10px
+
+p.text
+    margin-left 3px
+
+.g-footer
+    padding-top:0;
+
+@media all and (max-width: 700px)
+    .map_container
+        flex-wrap wrap-reverse
+        // flex-direction column
+    .world_map
+        width 100%
+        height 50%
+        // height 70%
+        float right
+
+    .svg-content-responsive
+        width 100%
+        height 600px
+
+    .toolTip
+        width 100%
+        height calc(100vh - 50%)
+        // margin-top -150px
+
+    .button-wrapper
+        text-align center
+        padding 0
+        margin 1em auto
+        position absolute
+        left 30%
+        right 30%

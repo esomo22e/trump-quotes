@@ -1,0 +1,15 @@
+{{#if teasers}}
+<div class='teasers'>
+	<h4 class='teasers__title benton-bold'>Up next</h4>
+	<ul class='teasers__list'>
+		{{#each teasers}}
+		<li class='teasers__item'>
+			<a class='teasers__link' href='{{url}}' target="_blank">
+				<div class="teasers__img" style="background-image: url({{image}});"></div>
+				<h3 class='teasers__hed miller-bold'>{{title}}</h3>
+			</a>
+		</li>
+		{{/each}}
+	</ul>
+</div>
+{{/if}}
